@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="vikrant.css">
+</head>
+<body>
+
+<div class="background">
+<div class="nav">
+	<a class="a active" href="#">HOME</a>
+	<a class="b" href="#">ABOUT ME</a>
+	<a class="c" href="#">GALLERY</a>
+	<a class="d" href="#">CONTACT US</a>
+</div>
+
+<div class="content">
+	
+	<div class="home">
+		<h1>I am ARTISTAA</h1>
+		<h3>AN ARTIST</h3>
+	</div>
+
+	<div class="aboutus">
+		<p><b>Hello Friends,</b><br>
+		Welcome To my "ART PARADISE!"<b>(@__ARTISTAA___)<b> <br>
+		My name is PRACHITI THAKUR.I am young aspiring creative artist born.Creattivity expression is a big part of my life.<br>
+		"BE PASSIONATE ABOUT WHAT YOU LOVE TO DO!!!".</br>I have been exploring my art during my free time since I could hold a crayons,colours,brushes.
+		Here you will get all my artwork like paintings,sketches,Mandala Art and much more to explore.The gallary here displays my work as a painter,drawer etc.(please enjoy my gallary).
+		So as you enjoy it!Tell me your views on my work in contact us menu!and if you wanted to keep in touch with us then also you can contact us(Buy or project support etc.)</p>
+		<p>"I believe in only in ART"It gives me shadow all over in my life.The pictures I draw are the things i see everyday.I want to see people feel of my artwork as I see in it.My work gives 
+		expressions to me.So keep exploring my work guys!!!</p>
+
+	    <br>" EARTH without ART is just EH!"</br>
+		<br> ThanQ you! </br>
+		</p>
+	</div>
+     
+     
+
+	<div class="gallery">
+		<div class="image">
+			<img src="1.jpg" />
+		</div>
+		<div class="image">
+			<img src="2.jpg" />
+		</div>
+		<div class="image">
+			<img src="3.jpg" />
+		</div>
+		<div class="image">
+			<img src="4.jpg" />
+		</div>
+		<div class="image">
+			<img src="5.jpg" />
+		</div>
+		<div class="image">
+			<img src="6.jpg" />
+		</div>
+		<div class="image">
+			<img src="7.jpg" />
+		</div>
+		<div class="image">
+			<img src="8.jpg" />
+		</div>
+		<div class="image">
+			<img src="9.jpg" />
+		</div>
+		<div class="image">
+			<img src="10.jpg" />
+		</div>
+		<div class="image">
+			<img src="11.jpg" />
+		</div>
+		<div class="image">
+			<img src="12.jpg" />
+		</div>
+		<div class="image">
+			<img src="13.jpg" />
+		</div>
+		<div class="image">
+			<img src="14.jpg" />
+		</div>
+		<div class="image">
+			<img src="15.jpg" />
+		</div>
+		<div class="image">
+			<img src="16.jpg"/>
+		</div>
+		<div class="image">
+			<img src="17.jpg" />
+		</div>
+		<div class="image">
+			<img src="18.jpg" />
+		</div>
+		<div class="image">
+			<img src="19.jpg" />
+		</div>
+		<div class="image">
+			<img src="20.jpg" />
+		</div>
+		<div class="image">
+			<img src="21.jpg" />
+		</div>
+		<div class="image">
+			<img src="22.jpg" />
+		</div>
+		<div class="image">
+			<img src="23.jpg" />
+		</div>
+		<div class="image">
+			<img src="25.jpg" />
+		</div>
+		<div class="image">
+			<img src="26.jpg" />
+		</div>
+		<div class="image">
+			<img src="27.jpg" />
+		</div>
+		<div class="image">
+			<img src="24.jpg" />
+		</div>
+		<div class="image">
+			<img src="28.jpg" />
+		</div>
+		<div class="image">
+			<img src="29.jpg" />
+		</div>
+		<div class="image">
+			<img src="30.jpg" />
+
+		</div>
+		<div class="image">
+			<img src="31.jpg" />
+		</div>
+		<div class="image">
+			<img src="32.jpg" /> 
+        </div>
+        <div class="image">
+			<img src="34.jpg" />
+		</div>
+		<div class="image">
+			<img src="35.jpg" />
+		</div>
+		<div class="image">
+			<img src="36.jpg" />
+		</div>
+		<div class="image">
+			<img src="37.jpg" />
+		</div>
+		<div class="image">
+			<img src="38.jpg" />
+		</div>
+		<div class="image">
+			<img src="39.jpg" />
+		</div>
+      </div>
+
+	<div class="contactus">
+		<div class="contactform">
+			<form action="index.html" method="post">
+				<input type="text" name="" class="inputtext" value="First Name" placeholder="First Name">
+				<input type="text" name="" class="inputtext" value="Last Name" placeholder="Last Name">
+				<input type="text" name="" class="inputtext" value="Your Email" placeholder="Your Email">
+				<textarea cols="4" rows="6" class="inputmessage">Your Messages and Reviews...!!!</textarea>
+				<input type="button" name="" class="submitbutton" value="Submit">
+			</form>
+		</div>
+	</div>
+</div>
+	
+</div>
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').click(function(){
+		//alert("i am click");
+		var selected = $(this);
+		$('a').removeClass('active');
+		$(selected).addClass('active');
+	});
+	var $a = $('.a'),
+	$b = $('.b'),
+	$c = $('.c'),
+	$d = $('.d'),
+	$home = $('.home'),
+	$aboutus = $('.aboutus'),
+	$gallery = $('.gallery'),
+	$contactus = $('.contactus');
+
+	$a.click(function(){
+		$home.fadeIn();
+		$aboutus.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+	$b.click(function(){
+		$aboutus.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$contactus.fadeOut();
+	});
+	$c.click(function(){
+		$gallery.fadeIn();
+		$home.fadeOut();
+		$aboutus.fadeOut();
+		$contactus.fadeOut();
+	});
+	$d.click(function(){
+		$contactus.fadeIn();
+		$home.fadeOut();
+		$gallery.fadeOut();
+		$aboutus.fadeOut();
+	});
+});
+</script>
+</body>
+</html>
